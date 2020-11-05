@@ -1,0 +1,23 @@
+{
+    "name": "chorale-de-cocody-philadelphie",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "copy": "copyfiles -u 1 src/**/**/* src/**/* src/* public",
+        "build": "npm run copy && workbox injectManifest workbox-config.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bufferutil": "^4.0.1",
+        "express": "^4.16.3",
+        "utf-8-validate": "^5.0.2",
+        "workbox-background-sync": "^5.1.3"
+    },
+    "description": "",
+    "devDependencies": {
+        "copyfiles": "^1.2.0",
+        "workbox-cli": "^5.1.4"
+    }
+}
